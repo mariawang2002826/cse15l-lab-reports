@@ -1,15 +1,16 @@
 # Lab Report 1
-1) Installing VScode
+
+## 1. Installing VScode
 >
-First go to the website https://code.visualstudio.com/ to download the correct version of VSCode for your computer (Macs OX or Windows). Then follow the instructions to install it on computer. The VSCode should look like this after installation:
+First go to the website [VSCode link](https://code.visualstudio.com/) to download the correct version of VSCode for your computer (Macs OX or Windows). Then follow the instructions to install it on computer. The VSCode should look like this after installation:
 
 ![Image1](VSCode.png)
 
-2) Remotely Connecting
+## 2. Remotely Connecting
 >
 There is a specific account for every CSE15l students, which should looks like cs15lwi22xxx@ieng6.ucsd.edu (replace the xxx with your assigned characters). First make sure to find it. Then, open the terminal on VSCode, and type
 `ssh cs15lwi22xxx@ieng6.ucsd.edu`
-Then, it will ask for the password. Type the password to connect the server. (set up a new password at https://sdacs.ucsd.edu/~icc/index.php if you forget)
+Then, it will ask for the password. Type the password to connect the server. (set up a new password at [UCSD Link](https://sdacs.ucsd.edu/~icc/index.php) if you forget)
 
 ![Image2](ssh.png)
 
@@ -17,7 +18,7 @@ This would appear if successfully connect to the remote sever:
 
 ![Image3](ssh2.png)
 
-3) Trying several commands
+## 3. Trying several commands
 >
 There are some commands that have specific functions in ssh server, for example:
 
@@ -41,7 +42,7 @@ pwd: print working directory
 
 ![Image8](pwd.png)
 
-4) Moving Files with scp
+## 4. Moving Files with scp
 >
 Using scp can securely copy the files on computer to the server. For example, a java file called WhereAmI is created that contain some print methods, and it can be copied to the remote server if writing this in the terminal:
 `scp WhereAmI.java cs15lwi22xxx@ieng6.ucsd.edu:~/`
@@ -51,7 +52,7 @@ After performing that, an ls method should show the WhereAmI.java in the home di
 
 ![Image9](scp.png)
 
-5) Setting an SSH Key
+## 5. Setting an SSH Key
 >
 This step helps to get rid of the process of entering password every time you log in or create secure copy to the server. Write the below code on the VSCode terminal below:
 
@@ -77,7 +78,7 @@ After that, it is able to log into the ssh without having to enter password. It 
 
 ![Image10](keygen.png)
 
-6) Optimizing Remote Running
+## 6. Optimizing Remote Running
 >
 There are some ways to make the command more concise and merge several commands in the same line to run them together. 
 For example, put the command in quotation mark after the ssh command will log in the server, run the command in the quotation mark on the server, and immediately log off the server.
